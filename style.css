@@ -1,0 +1,53 @@
+.navbar {
+  padding-left: 2cm;
+  padding-right: 2cm;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #0c9463;
+  font-family: "Merriweather", serif;
+  cursor: progress;
+}
+
+.navbar .navbar-nav .nav-link .active {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+}
+
+.navbar .navbar-nav .dropdown-item {
+  color: #181818;
+  font-size: large;
+}
+
+.profile img {
+  width: 400px;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
+.profile .col-8 {
+  margin-top: 3.5cm;
+}
+
+.profile {
+  background-color: #191a19;
+}
+
+.profile .row {
+  color: #ffffff;
+  padding-left: 3cm;
+  padding-right: 3cm;
+  padding-bottom: 0.2cm;
+}
+
+.visimisi .visi {
+  padding-top: 3cm;
+}
+
+.visimisi img {
+  width: 400px;
+}
+
+body {
+  overflow-x: hidden;
+}
