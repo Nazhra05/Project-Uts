@@ -15,7 +15,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enabled = false;
 
 camera.position.z = 80;
-camera.position.x = 80;
+camera.position.x = 70;
 camera.position.y = -25;
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -48,3 +48,67 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+
+anime({
+  targets: ".kelas",
+  translateX: {
+    value: 190,
+    duration: 1800,
+  },
+  rotate: {
+    value: 360,
+    duration: 1800,
+    easing: "easeInOutSine",
+  },
+  scale: {
+    value: 4,
+    duration: 1600,
+    delay: 1800,
+    easing: "easeInOutQuart",
+  },
+  delay: 250, // All properties except 'scale' inherit 250ms delay
+  loop: true,
+});
+
+anime({
+  targets: ".koku object",
+
+  translateX: {
+    value: [90, -190],
+    duration: 1800,
+  },
+  rotate: {
+    value: 360,
+    duration: 1800,
+    easing: "easeInOutSine",
+  },
+  scale: {
+    value: 4,
+    duration: 1600,
+    delay: 1800,
+    easing: "easeInOutQuart",
+  },
+  delay: 250, // All properties except 'scale' inherit 250ms delay
+  loop: true,
+});
+
+anime({
+  targets: ".olahraga",
+  translateX: {
+    value: 0,
+    duration: 1800,
+  },
+  // rotate: {
+  //   value: 360,
+  //   duration: 1800,
+  //   easing: "easeInOutSine",
+  // },
+  scale: {
+    value: 4,
+    duration: 1600,
+    delay: 1800,
+    easing: "easeInOutQuart",
+  },
+  delay: 250, // All properties except 'scale' inherit 250ms delay
+  loop: true,
+});
