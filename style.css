@@ -1,17 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   padding-left: 2cm;
   padding-right: 2cm;
 }
 
+.navbar .navbar-brand {
+  color: #0c9463;
+}
+
 .navbar .navbar-nav .nav-link {
   color: #0c9463;
   font-family: "Merriweather", serif;
-  cursor: progress;
+  cursor: pointer;
+  transition: 0.25s ease-in;
 }
 
-.navbar .navbar-nav .nav-link .active {
-  color: #ffffff;
-  font-family: "Merriweather", serif;
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #0c9463;
+  color: #191a19;
 }
 
 .navbar .navbar-nav .dropdown-item {
@@ -19,10 +32,8 @@
   font-size: large;
 }
 
-.profile img {
-  width: 400px;
-  margin-top: 25%;
-  margin-left: 25%;
+.profile .col-4 {
+  padding-top: 115px;
 }
 
 .profile .col-8 {
@@ -40,14 +51,83 @@
   padding-bottom: 0.2cm;
 }
 
-.visimisi .visi {
-  padding-top: 3cm;
+.visimisi {
+  color: #181818;
 }
 
 .visimisi img {
   width: 400px;
 }
 
-body {
-  overflow-x: hidden;
+.kotak {
+  position: absolute;
+  margin-top: 2cm;
+}
+
+.col-6 .justify-content-end {
+  border: #181818;
+}
+
+/* .textisi {
+  font-family: "Playfair Display", serif;
+} */
+
+.activity {
+  position: relative;
+  overflow: hidden;
+}
+
+.activity img {
+  width: 400px;
+  height: 400 px;
+}
+
+.activity .row {
+  color: #ffffff;
+  padding-left: 3cm;
+  padding-right: 3cm;
+  padding-bottom: 0.2cm;
+}
+
+.gelombang {
+  background-color: #181818;
+}
+
+.news {
+  background-color: #0c9463;
+}
+
+.news img {
+  width: 400px;
+  /* margin-left: 25%; */
+  /* margin-top: 500px; */
+}
+
+.news a:hover {
+  background-color: #0c9463;
+  color: #191a19;
+}
+
+.footer li {
+  background-color: #181818;
+  color: #ffffff;
+}
+
+.koku object {
+  width: 159.25px;
+  height: 159.25px;
+  padding-top: 1.5cm;
+}
+
+.kelas {
+  width: 159.25px;
+  height: 159.25px;
+  padding-top: 1.5cm;
+}
+
+.olahraga {
+  width: 159.25px;
+  height: 159.25px;
+  padding-top: 1.5cm;
+  padding-left: 2cm;
 }
